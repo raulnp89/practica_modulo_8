@@ -1,28 +1,35 @@
-import { PokemonDetail } from "@/components/pokemonDetail/PokemonDetail";
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { PokemonDetail } from "@/components/pokemonDetail/PokemonDetailComponent";
+import { useRouter } from "next/router";
 import React from "react";
 import Link from "next/link";
-import { getPokemons } from "@/pages/api/pokemonFetch";
+import { deletePokemonById } from "./api/pokemonFetch";
+import { modifyName } from "./api/pokemonFetch";
 
-export default function PaginaDetalle() {
-  const [pokemon, setPokemon] = useState([]);
-  useEffect(() => {
-    let pokemonAux = getPokemons();
-    setPokemon(pokemonAux);
-  }, []);
+export default function PaginaDetalle(pokemonId) {
+  const router = useRouter();
+  const { id } = router.query;
+  const deletePokemon = () => {
+    deletePokemonById(id);
+    router.back();
+  };
   return (
-    <div className="headerDetalle">
-      <h1>Detalle del Pokemon</h1>
-      <Link
-        href={{
-          pathname: "/",
-        }}
-      >
-        Volver al inicio
-      </Link>
-      <div>
-        <span>{pokemon.nombre} </span>
+    <div className="contenedorDetalle">
+      <h1 className="titleDetalle">Detalle del Pokemon</h1>
+
+      <PokemonDetail pokemonId={id} />
+      <div className="botones">
+        <button onClick={deletePokemon}>Eliminar Pokemon</button>
+        <button>
+          <Link href={{ pathname: "/editPokemon" }} />
+          Modificar Pokemon
+        </button>
+        <Link
+          href={{
+            pathname: "/",
+          }}
+        >
+          Volver al inicio
+        </Link>
       </div>
     </div>
   );

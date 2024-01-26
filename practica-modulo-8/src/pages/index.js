@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import PokemonList from "../components/pokemonList/PokemonList";
-
 import "../styles/Home.module.css";
 
 export default function Home() {

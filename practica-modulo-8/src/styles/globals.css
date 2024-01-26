@@ -1,20 +1,38 @@
-*{
-    list-style: none;
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
+
+* {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Coming Soon", sans-serif;
 }
 
-.title{
+.title {
   display: flex;
   justify-content: center;
 }
 
-.indexList{
-    display: flex;
-    justify-content:space-between;
+.indexList {
+  display: flex;
+  justify-content: space-between;
 }
 
-.headerDetalle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+.titleDetalle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.pokemonDetail {
+  margin-block: 100px;
+  display: grid;
+  justify-content: center;
+}
+
+.botones {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
 }

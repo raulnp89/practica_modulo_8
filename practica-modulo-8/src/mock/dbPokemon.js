@@ -1,7 +1,7 @@
 export let pokemons = [
   {
     id: 0,
-    name: "ivysaur",
+    name: "Ivysaur",
     url: "https://pokeapi.co/api/v2/pokemon/2/",
     details: {
       height: 10,
@@ -11,7 +11,7 @@ export let pokemons = [
   },
   {
     id: 1,
-    name: "venusaur",
+    name: "Venusaur",
     url: "https://pokeapi.co/api/v2/pokemon/3/",
     details: {
       height: 20,
@@ -21,7 +21,7 @@ export let pokemons = [
   },
   {
     id: 2,
-    name: "charmander",
+    name: "Charmander",
     url: "https://pokeapi.co/api/v2/pokemon/4/",
     details: {
       height: 6,
@@ -31,7 +31,7 @@ export let pokemons = [
   },
   {
     id: 3,
-    name: "charmeleon",
+    name: "Charmeleon",
     url: "https://pokeapi.co/api/v2/pokemon/5/",
     details: {
       height: 11,
@@ -41,7 +41,7 @@ export let pokemons = [
   },
   {
     id: 4,
-    name: "charizard",
+    name: "Charizard",
     url: "https://pokeapi.co/api/v2/pokemon/6/",
     details: {
       height: 17,
@@ -49,19 +49,10 @@ export let pokemons = [
       type: ["fire", "flying"],
     },
   },
-  {
-    id: 4,
-    name: "charizard",
-    url: "https://pokeapi.co/api/v2/pokemon/6/",
-    details: {
-      height: 17,
-      weight: 905,
-      type: ["fire", "flying"],
-    },
-  },
+
   {
     id: 5,
-    name: "squirtle",
+    name: "Squirtle",
     url: "https://pokeapi.co/api/v2/pokemon/7/",
     details: {
       height: 5,
@@ -71,7 +62,7 @@ export let pokemons = [
   },
   {
     id: 6,
-    name: "wartortle",
+    name: "Wartortle",
     url: "https://pokeapi.co/api/v2/pokemon/8/",
     details: {
       height: 10,
@@ -81,7 +72,7 @@ export let pokemons = [
   },
   {
     id: 7,
-    name: "blastoise",
+    name: "Blastoise",
     url: "https://pokeapi.co/api/v2/pokemon/9/",
     details: {
       height: 16,
@@ -91,7 +82,7 @@ export let pokemons = [
   },
   {
     id: 8,
-    name: "caterpie",
+    name: "Caterpie",
     url: "https://pokeapi.co/api/v2/pokemon/10/",
     details: {
       height: 3,
@@ -101,7 +92,7 @@ export let pokemons = [
   },
   {
     id: 9,
-    name: "metapod",
+    name: "Metapod",
     url: "https://pokeapi.co/api/v2/pokemon/11/",
     details: {
       height: 7,

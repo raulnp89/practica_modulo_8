@@ -27,7 +27,14 @@ export default function PokemonList() {
             </button>
             <div>
               <button>
-                <Link href={{ pathname: "PaginaDetalle" }}>Detalle</Link>
+                <Link
+                  href={{
+                    pathname: "PaginaDetalle",
+                    query: { id: pokemon.id },
+                  }}
+                >
+                  Detalle
+                </Link>
               </button>
             </div>
           </div>
