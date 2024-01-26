@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import Link from "next/link";
 import { deletePokemonById } from "./api/pokemonFetch";
-import { modifyName } from "./api/pokemonFetch";
+
 
 export default function PaginaDetalle(pokemonId) {
   const router = useRouter();
@@ -19,17 +19,17 @@ export default function PaginaDetalle(pokemonId) {
       <PokemonDetail pokemonId={id} />
       <div className="botones">
         <button onClick={deletePokemon}>Eliminar Pokemon</button>
+        <button>Modificar Pokemon</button>
+
         <button>
-          <Link href={{ pathname: "/editPokemon" }} />
-          Modificar Pokemon
+          <Link
+            href={{
+              pathname: "/",
+            }}
+          >
+            Volver al inicio
+          </Link>
         </button>
-        <Link
-          href={{
-            pathname: "/",
-          }}
-        >
-          Volver al inicio
-        </Link>
       </div>
     </div>
   );

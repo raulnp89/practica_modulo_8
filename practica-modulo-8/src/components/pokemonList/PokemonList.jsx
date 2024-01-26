@@ -15,17 +15,13 @@ export default function PokemonList() {
       <h1 className="pokemonList">Lista de Pokemon:</h1>
       {pokemon.map((pokemon, index) => {
         return (
-          <div key={index}>
+          <div key={index} className="listaPokemon">
             <div>
               <span>{pokemon.id} </span>
-            </div>
-            <div>
               <span>{pokemon.nombre} </span>
-            </div>
-            <button>
-              <Link href={pokemon.url}> Info Adicional</Link>
-            </button>
-            <div>
+              <button>
+                <Link href={pokemon.url}> Info Adicional</Link>
+              </button>
               <button>
                 <Link
                   href={{
