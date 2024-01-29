@@ -38,6 +38,7 @@ export function PokemonDetail({ pokemonId }) {
         {pokemon.details ? pokemon.details.type.join(", ") : "Cargando..."}
       </span>
       <img
+        className="pokemonImg"
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
       ></img>
     </div>

@@ -3,20 +3,28 @@ import Link from "next/link";
 import PokemonList from "../components/pokemonList/PokemonList";
 import "../styles/Home.module.css";
 
+
+
 export default function Home() {
   return (
     <div>
       <h1 className="title">Pokemon S.A.</h1>
       <ul className="indexList">
         <li>
-          <Link href={{ pathname: "PokemonCreate" }}>Creacion de Pokemon</Link>
+          <button>
+            <Link href={{ pathname: "PokemonCreate" }}>
+              Creacion de Pokemon
+            </Link>
+          </button>
         </li>
         <li>
-          <Link href={{ pathname: "Contact" }}>Contacto</Link>
+          <button>
+            <Link href={{ pathname: "Contact" }}>Contacto</Link>
+          </button>
         </li>
       </ul>
 
-      <div>
+      <div className="listaPokemon">
         <PokemonList />
       </div>
     </div>

@@ -4,6 +4,8 @@
   text-decoration: none;
   list-style: none;
   font-family: "Coming Soon", sans-serif;
+  background-color: cornflowerblue;
+  color: black;
 }
 
 .title {
@@ -13,7 +15,8 @@
 
 .indexList {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
 }
 
 .titleDetalle {
@@ -42,8 +45,51 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px; 
   padding: 20px;
+  border: 1px solid black;
+  
 }
 
 .link{
   text-decoration: none;
+}
+
+.pokemonList{
+  display: flex;
+  justify-content: center;
+
+}
+
+.pokemonImg{
+  height: 300px;
+  width: 300px;
+  
+}
+
+.newPokemon{
+
+  display: flex;
+  gap: 50px;
+}
+.newPokemon span{
+  display: flex;
+  gap: 15px;
+}
+.home{
+  display: flex;
+  
+}
+
+.contenedorDetalle{
+  display: flex;
+  justify-content: center;
+ 
+}
+.formularioNew{
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+}
+
+.input{
+  display: flex;
 }

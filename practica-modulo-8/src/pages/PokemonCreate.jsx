@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NewPokemon from "@/components/newPokemon/NewPokemonComponent";
 import Link from "next/link";
-
+import CreatePokemon from "@/components/newPokemon/NewPokemonComponent";
 export default function PaginaDetalle(pokemonId) {
   return (
     <div className="headerDetalle">
@@ -14,7 +14,7 @@ export default function PaginaDetalle(pokemonId) {
       </Link>
       <h1>Nuevo Pokemon</h1>
 
-      <NewPokemon />
+      <CreatePokemon />
     </div>
   );
 }

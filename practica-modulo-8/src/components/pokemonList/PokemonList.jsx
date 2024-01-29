@@ -2,7 +2,6 @@ import React from "react";
 import { getPokemons } from "@/pages/api/pokemonFetch";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import "./pokemonList.module.css";
 
 export default function PokemonList() {
   const [pokemon, setPokemon] = useState([]);
@@ -19,6 +18,10 @@ export default function PokemonList() {
             <div>
               <span>{pokemon.id} </span>
               <span>{pokemon.nombre} </span>
+              <img
+                className="pokemonImg"
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
+              ></img>
               <button>
                 <Link href={pokemon.url}> Info Adicional</Link>
               </button>
